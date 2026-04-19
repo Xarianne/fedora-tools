@@ -1,5 +1,5 @@
 Name:           game-devices-udev
-Version:        0.24
+Version:        0.25
 Release:        1%{?dist}
 Summary:        Udev rules for game controllers
 BuildArch:      noarch
