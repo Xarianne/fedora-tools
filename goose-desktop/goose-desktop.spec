@@ -7,7 +7,7 @@ License:        Apache-2.0
 URL:            https://goose-docs.ai/
 Source0:        https://github.com/aaif-goose/goose/releases/download/v%{version}/Goose-%{version}-1.x86_64.rpm
 
-BuildArch:      x86_64
+ExclusiveArch: x86_64
 
 BuildRequires:  rpm-build
 BuildRequires:  cpio
