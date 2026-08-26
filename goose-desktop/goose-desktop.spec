@@ -1,4 +1,4 @@
-Name:           goose
+Name:           goose-desktop
 Version:        1.47.0
 Release:        %autorelease
 Summary:        Goose AI agent desktop application
