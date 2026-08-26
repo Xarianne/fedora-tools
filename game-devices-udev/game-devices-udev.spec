@@ -28,7 +28,7 @@ uinput module at boot.
 %install
 # Install rules to /usr/lib (vendor) to avoid conflicts with /etc (admin)
 install -d -m 0755 %{buildroot}%{_prefix}/lib/udev/rules.d
-install -m 0644 *.rules %{buildroot}%{_prefix}/lib/udev/rules.d/
+install -m 0644 src/*.rules %{buildroot}%{_prefix}/lib/udev/rules.d/
 
 # Ensure uinput module loads on boot
 install -d -m 0755 %{buildroot}%{_prefix}/lib/modules-load.d
