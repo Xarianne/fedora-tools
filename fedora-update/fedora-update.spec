@@ -20,6 +20,7 @@ BuildRequires:  systemd-rpm-macros
 Requires:       dnf
 Requires:       libnotify
 Requires:       python3
+Requires:       python3-gobject
 Requires:       python3-pystray
 Requires:       python3-pillow
 Requires:       xdg-terminal-exec
@@ -27,7 +28,8 @@ Requires:       xdg-terminal-exec
 %description
 Interactive helper that checks for updates, runs dnf upgrade, autoremove
 and cache cleanup, accessible from the desktop menu, plus an optional
-tray helper that periodically checks for updates.
+tray helper that periodically checks for updates and changes its icon
+colour when updates are available or a check fails.
 
 %prep
 %autosetup -c -T
