@@ -1,4 +1,6 @@
-/* Allow members of the wheel group to reboot without a password. */
+/* Allow wheel members to reboot without an additional password prompt.
+ * Selecting Windows for the next boot requires authentication via pkexec.
+ */
 polkit.addRule(function(action, subject) {
     if (action.id == "org.freedesktop.login1.reboot" &&
         subject.isInGroup("wheel")) {
