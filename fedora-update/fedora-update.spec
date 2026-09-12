@@ -1,10 +1,10 @@
 Name:           fedora-update
-Version:        1.4.1
+Version:        1.5
 Release:        %autorelease
 Summary:        Interactive DNF update and cleanup helper
 
 License:        GPL-3.0-or-later
-URL:            https://github.com/xariann-pkg/fedora-tools
+URL:            https://github.com/Xarianne/fedora-tools
 Source0:        fedora-update.sh
 Source1:        fedora-update.desktop
 Source2:        fedora-update-tray.py
