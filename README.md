@@ -19,6 +19,3 @@ systemctl --user enable --now fedora-update-check.timer
 
 ## Boot Windows [![Copr build status](https://copr.fedorainfracloud.org/coprs/xariann/tools/package/boot-windows/status_image/last_build.png)](https://copr.fedorainfracloud.org/coprs/xariann/tools/package/boot-windows/)
 A script that finds your Windows boot entry and then asks you if you want to reboot to Windows.
-
-## Goose Desktop [![Copr build status](https://copr.fedorainfracloud.org/coprs/xariann/tools/package/goose-desktop/status_image/last_build.png)](https://copr.fedorainfracloud.org/coprs/xariann/tools/package/goose-desktop/)
-An open source AI agent desktop application. Repackages the upstream prebuilt RPM from https://github.com/aaif-goose/goose/releases — tracked via release-monitoring.org for automatic rebuilds on new stable releases.
