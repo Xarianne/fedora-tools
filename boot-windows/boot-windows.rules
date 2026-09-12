@@ -1,7 +1,8 @@
-/* Allow members of the wheel group to set UEFI BootNext and reboot without a password */
+/* Allow wheel members to reboot without an additional password prompt.
+ * Selecting Windows for the next boot requires authentication via pkexec.
+ */
 polkit.addRule(function(action, subject) {
-    if ((action.id == "org.freedesktop.login1.reboot" ||
-         action.id == "org.debian.pkexec.efibootmgr") &&
+    if (action.id == "org.freedesktop.login1.reboot" &&
         subject.isInGroup("wheel")) {
         return polkit.Result.YES;
     }

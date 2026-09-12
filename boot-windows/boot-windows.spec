@@ -1,20 +1,20 @@
 Name:           boot-windows
-Version:        1.4
+Version:        1.5
 Release:        %autorelease
 Summary:        Reboot into Windows via UEFI BootNext
 
 License:        GPL-3.0-or-later
-URL:            https://github.com/xariann-pkg/fedora-tools
+URL:            https://github.com/Xarianne/fedora-tools
 Source0:        boot-windows.sh
 Source1:        boot-windows.desktop
 Source2:        boot-windows.rules
 
 BuildArch:      noarch
-Requires:       efibootmgr 
-Requires:       zenity 
+Requires:       efibootmgr
+Requires:       zenity
 Requires:       systemd
-Requires:       desktop-file-utils 
-Requires:       libnotify 
+Requires:       desktop-file-utils
+Requires:       libnotify
 Requires:       polkit
 
 %description
@@ -29,7 +29,7 @@ cp %{SOURCE0} %{SOURCE1} %{SOURCE2} .
 # No build steps needed for a shell script [cite: 5]
 
 %install
-# Install the script with executable permissions 
+# Install the script with executable permissions
 install -D -p -m 0755 boot-windows.sh %{buildroot}%{_bindir}/boot-windows
 
 # Install the desktop entry
