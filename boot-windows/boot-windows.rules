@@ -1,7 +1,6 @@
-/* Allow members of the wheel group to set UEFI BootNext and reboot without a password */
+/* Allow members of the wheel group to reboot without a password. */
 polkit.addRule(function(action, subject) {
-    if ((action.id == "org.freedesktop.login1.reboot" ||
-         action.id == "org.debian.pkexec.efibootmgr") &&
+    if (action.id == "org.freedesktop.login1.reboot" &&
         subject.isInGroup("wheel")) {
         return polkit.Result.YES;
     }
