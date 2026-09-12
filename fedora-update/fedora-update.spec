@@ -1,5 +1,5 @@
 Name:           fedora-update
-Version:        1.5
+Version:        1.6
 Release:        %autorelease
 Summary:        Interactive DNF update and cleanup helper
 
